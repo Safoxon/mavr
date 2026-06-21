@@ -1,0 +1,46 @@
+.courses{background:var(--ink); color:var(--paper);}
+.courses .section-head h2{color:var(--paper);}
+.courses .section-head p{color:rgba(247,243,236,0.6);}
+.courses .eyebrow{color:var(--gold);}
+.courses .eyebrow::before{background:var(--gold);}
+
+.filter-row{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:40px;}
+.filter-pill{
+  border:1px solid rgba(247,243,236,0.25); padding:9px 18px;
+  border-radius:100px; font-size:0.85rem; font-weight:600;
+  cursor:pointer; transition:all .2s; background:transparent; color:var(--paper);
+}
+.filter-pill.active, .filter-pill:hover{
+  background:var(--gold); color:var(--ink); border-color:var(--gold);
+}
+
+.course-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:22px;}
+@media (max-width:900px){ .course-grid{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:640px){ .course-grid{grid-template-columns:1fr;} }
+
+.course-card{
+  background:rgba(247,243,236,0.04);
+  border:1px solid rgba(247,243,236,0.14);
+  border-radius:20px; padding:30px 26px;
+  transition:transform .25s ease, background .25s ease, border-color .25s ease;
+}
+.course-card:hover{
+  transform:translateY(-6px);
+  background:rgba(247,243,236,0.08);
+  border-color:rgba(217,164,65,0.5);
+}
+.course-top{display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:22px;}
+.course-script{font-size:2.4rem; font-weight:700; line-height:1;}
+.level-tag{
+  font-size:0.72rem; font-weight:700; padding:5px 11px; border-radius:100px;
+  background:rgba(217,164,65,0.18); color:var(--gold); letter-spacing:0.03em;
+}
+.course-card h3{font-size:1.25rem; margin-bottom:8px; font-weight:600;}
+.course-card .desc{font-size:0.88rem; color:rgba(247,243,236,0.6); margin-bottom:20px; min-height:42px;}
+.course-meta{
+  display:flex; justify-content:space-between; align-items:center;
+  border-top:1px solid rgba(247,243,236,0.14); padding-top:16px;
+  font-size:0.82rem; color:rgba(247,243,236,0.7);
+}
+.course-meta .price{color:var(--paper); font-weight:700; font-size:0.95rem;}
+.empty-state{color:rgba(247,243,236,0.5); padding:40px 0;}

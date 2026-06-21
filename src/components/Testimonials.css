@@ -1,0 +1,17 @@
+.testi-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+@media (max-width:900px){ .testi-grid{grid-template-columns:1fr;} }
+
+.testi-card{background:var(--paper-deep); border-radius:20px; padding:30px 28px; border:1px solid var(--line);}
+.testi-card .quote-mark{
+  font-family:'Fraunces',serif; font-size:2.6rem; color:var(--gold);
+  line-height:0.5; display:block; margin-bottom:14px;
+}
+.testi-card p.text{font-size:0.95rem; color:var(--ink); margin-bottom:22px; line-height:1.6;}
+.testi-person{display:flex; align-items:center; gap:12px;}
+.testi-avatar{
+  width:42px; height:42px; border-radius:50%; background:var(--ink); color:var(--paper);
+  display:flex; align-items:center; justify-content:center; font-weight:700;
+  font-size:0.9rem; font-family:'Fraunces',serif; flex-shrink:0;
+}
+.testi-person b{display:block; font-size:0.9rem;}
+.testi-person span{font-size:0.78rem; color:var(--ink-soft);}

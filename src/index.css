@@ -1,0 +1,67 @@
+:root{
+  --ink: #1B3A3F;
+  --paper: #F7F3EC;
+  --gold: #D9A441;
+  --terracotta: #C4593B;
+  --ink-soft: #3E5D60;
+  --line: rgba(27,58,63,0.14);
+  --paper-deep: #EFE9DC;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Inter', sans-serif;
+  line-height:1.5;
+  overflow-x:hidden;
+}
+h1,h2,h3,.display{
+  font-family:'Fraunces', serif;
+  font-weight:600;
+  letter-spacing:-0.01em;
+}
+a{color:inherit; text-decoration:none;}
+img{max-width:100%; display:block;}
+button{font-family:inherit;}
+
+.wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
+@media (max-width:640px){ .wrap{padding:0 20px;} }
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important; transition:none !important;}
+}
+
+.eyebrow{
+  display:inline-flex; align-items:center; gap:10px;
+  font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;
+  color:var(--terracotta); font-weight:700; margin-bottom:22px;
+}
+.eyebrow::before{content:''; width:28px; height:1.5px; background:var(--terracotta);}
+
+.btn-primary{
+  background:var(--ink); color:var(--paper); padding:15px 30px;
+  border-radius:100px; font-weight:600; font-size:0.96rem;
+  transition:background .2s, transform .2s; display:inline-block;
+  border:none; cursor:pointer;
+}
+.btn-primary:hover{background:var(--terracotta); transform:translateY(-2px);}
+
+.btn-ghost{
+  border:1.5px solid var(--ink); padding:13.5px 28px;
+  border-radius:100px; font-weight:600; font-size:0.96rem;
+  transition:all .2s; display:inline-block; background:transparent;
+}
+.btn-ghost:hover{background:var(--ink); color:var(--paper);}
+
+.section{padding:100px 0;}
+.section.tight{padding:70px 0;}
+.section-head{
+  display:flex; justify-content:space-between; align-items:flex-end;
+  gap:30px; margin-bottom:56px; flex-wrap:wrap;
+}
+.section-head h2{font-size:clamp(2rem, 3.4vw, 2.8rem); max-width:560px;}
+.section-head p{color:var(--ink-soft); max-width:380px; font-size:1rem;}
+
+.reveal{opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease;}
+.reveal.in{opacity:1; transform:translateY(0);}

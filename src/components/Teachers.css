@@ -1,0 +1,28 @@
+.teacher-grid{display:grid; grid-template-columns:repeat(4, 1fr); gap:20px;}
+@media (max-width:980px){ .teacher-grid{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:460px){ .teacher-grid{grid-template-columns:1fr;} }
+
+.teacher-card{
+  background:var(--paper-deep);
+  border-radius:20px; overflow:hidden;
+  border:1px solid var(--line);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.teacher-card:hover{transform:translateY(-5px); box-shadow:0 20px 36px -18px rgba(27,58,63,0.3);}
+.teacher-photo{
+  height:200px; display:flex; align-items:center; justify-content:center;
+  font-family:'Fraunces',serif; font-size:3rem; font-weight:600;
+  position:relative;
+}
+.teacher-photo::after{
+  content:attr(data-flag); position:absolute; bottom:12px; right:14px; font-size:1.4rem;
+}
+.teacher-info{padding:20px 22px 24px;}
+.teacher-info h3{font-size:1.08rem; margin-bottom:3px;}
+.teacher-info .role{font-size:0.82rem; color:var(--terracotta); font-weight:600; margin-bottom:12px;}
+.teacher-info .bio{font-size:0.85rem; color:var(--ink-soft); line-height:1.55;}
+.teacher-langs{display:flex; gap:6px; margin-top:14px; flex-wrap:wrap;}
+.teacher-langs span{
+  font-size:0.7rem; font-weight:700; background:rgba(27,58,63,0.07);
+  padding:4px 10px; border-radius:100px; color:var(--ink-soft);
+}
