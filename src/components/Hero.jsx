@@ -9,7 +9,7 @@ const WORD_CARDS = [
 
 const STATS = [
   { value: '4', label: 'til yo\'nalishi' },
-  { value: '1,200+', label: 'bitiruvchi' },
+  { value: '1,500+', label: 'bitiruvchi' },
   { value: '97%', label: 'darajani oshiradi' },
   { value: '4.9', label: 'o\'rtacha baho' },
 ]
