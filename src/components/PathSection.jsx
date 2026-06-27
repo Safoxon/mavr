@@ -1,5 +1,7 @@
 import './PathSection.css'
 
+import ApplicationForm from './ApplicationForm'
+
 const STEPS = [
   { num: '01', title: "Bepul daraja aniqlash testi",
     desc: "15 daqiqalik online test orqali aniq darajangizni bilib olasiz — hech qanday majburiyatsiz." },
@@ -29,15 +31,8 @@ export default function PathSection() {
           </div>
         </div>
 
-        <div className="placement-card reveal" id="ariza">
-          <h3>Darajangizni biling</h3>
-          <p>Hozir boshlang — qaysi darajadan boshlash kerakligini 15 daqiqada bilib olasiz.</p>
-          <a href="#" className="btn-primary">Testni boshlash</a>
-          <div className="placement-mini-stat">
-            <div><b>15 daq</b><span>test davomiyligi</span></div>
-            <div><b>4 til</b><span>tanlov uchun</span></div>
-            <div><b>0 so'm</b><span>test narxi</span></div>
-          </div>
+        <div id="ariza" className="reveal" style={{ width: '100%', display: 'flex', alignItems: 'center' }}>
+          <ApplicationForm />
         </div>
       </div>
     </section>
