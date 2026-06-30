@@ -19,7 +19,9 @@ export default function Header() {
     <header>
       <div className="wrap">
         <nav>
-          <div className="logo">MA<span>VR</span></div>
+          <div className="logo">
+            <img src="/logo.png" alt="MAVR" />
+          </div>
 
           <div className="nav-links">
             {NAV_LINKS.map((link) => (

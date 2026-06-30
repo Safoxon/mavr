@@ -3,7 +3,7 @@ import './Hero.css'
 const WORD_CARDS = [
   { id: 'w1', script: 'Hello', meaning: 'ingliz tili', className: 'w1' },
   { id: 'w2', script: 'こんにちは', meaning: 'yapon tili', className: 'w2', fontFamily: "'Noto Sans JP', sans-serif" },
-  { id: 'w3', script: 'Привет', meaning: 'rus tili', className: 'w3' },
+  { id: 'w3', script: '안녕하세요', meaning: 'koreys tili', className: 'w3', fontFamily: "'Noto Sans KR', sans-serif" },
   { id: 'w4', script: 'مرحبا', meaning: 'arab tili', className: 'w4', fontFamily: "'Noto Sans Arabic', sans-serif" },
 ]
 
